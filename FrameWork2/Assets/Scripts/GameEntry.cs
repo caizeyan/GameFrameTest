@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityGameFramework.Runtime;
@@ -185,7 +186,12 @@ namespace Tutorial
             get;
             private set;
         }
- 
+
+        private void Awake()
+        {
+            InitBuiltinComponents();
+        }
+
         private static void InitBuiltinComponents()
         {
             Base = UnityGameFramework.Runtime.GameEntry.GetComponent<BaseComponent>();

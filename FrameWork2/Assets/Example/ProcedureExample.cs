@@ -10,11 +10,6 @@ namespace GameFrameworkExample
         protected override void OnEnter(ProcedureOwner procedureOwner)
         {
             base.OnEnter(procedureOwner);
-
-            string welcomeMessage = Utility.Text.Format("Hello! This is an empty project based on Game Framework {0}.", Version.GameFrameworkVersion);
-            Log.Info(welcomeMessage);
-            Log.Warning(welcomeMessage);
-            Log.Error(welcomeMessage);
         }
     }
 }
