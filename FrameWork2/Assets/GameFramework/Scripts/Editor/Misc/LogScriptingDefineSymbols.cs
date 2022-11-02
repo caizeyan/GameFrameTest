@@ -5,6 +5,7 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using System;
 using UnityEditor;
 
 namespace UnityGameFramework.Editor
@@ -117,6 +118,55 @@ namespace UnityGameFramework.Editor
         {
             SetAboveLogScriptingDefineSymbol(EnableFatalAndAboveLogScriptingDefineSymbol);
         }
+        
+        
+        /// <summary>
+        /// 开启调试及以上级别的日志脚本宏定义。
+        /// </summary>
+        [MenuItem("Game Framework/Log Scripting Define Symbols/Enable Debug Logs", false, 37)]
+        public static void EnableDebugLog()
+        {
+            SetSpecifyLogScriptingDefineSymbol(EnableDebugLogScriptingDefineSymbol);
+        }
+
+        /// <summary>
+        /// 开启信息及以上级别的日志脚本宏定义。
+        /// </summary>
+        [MenuItem("Game Framework/Log Scripting Define Symbols/Enable Info Logs", false, 38)]
+        public static void EnableInfoLogs()
+        {
+            SetSpecifyLogScriptingDefineSymbol(EnableInfoLogScriptingDefineSymbol);
+        }
+
+        /// <summary>
+        /// 开启警告及以上级别的日志脚本宏定义。
+        /// </summary>
+        [MenuItem("Game Framework/Log Scripting Define Symbols/Enable Warning  Logs", false, 39)]
+        public static void EnableWarningLogs()
+        {
+            SetSpecifyLogScriptingDefineSymbol(EnableWarningLogScriptingDefineSymbol);
+
+        }
+
+        /// <summary>
+        /// 开启错误及以上级别的日志脚本宏定义。
+        /// </summary>
+        [MenuItem("Game Framework/Log Scripting Define Symbols/Enable Error  Logs", false, 40)]
+        public static void EnableErrorLogs()
+        {
+            SetSpecifyLogScriptingDefineSymbol(EnableErrorLogScriptingDefineSymbol);
+        }
+
+        /// <summary>
+        /// 开启严重错误及以上级别的日志脚本宏定义。
+        /// </summary>
+        [MenuItem("Game Framework/Log Scripting Define Symbols/Enable Fatal  Logs", false, 41)]
+        public static void EnableFatalLogs()
+        {
+            SetSpecifyLogScriptingDefineSymbol(EnableFatalLogScriptingDefineSymbol);
+
+        }
+        
 
         /// <summary>
         /// 设置日志脚本宏定义。
@@ -140,6 +190,26 @@ namespace UnityGameFramework.Editor
             }
         }
 
+        /// <summary>
+        /// 设置特定日志脚本宏定义。
+        /// </summary>
+        /// <param name="specifyLog"></param>
+        public static void SetSpecifyLogScriptingDefineSymbol(string specifyLog)
+        {
+            if (String.IsNullOrEmpty(specifyLog))
+            {
+                return;
+            }
+            DisableAllLogs();
+            foreach (var specifyLogScriptingDefineSymbol in SpecifyLogScriptingDefineSymbols)
+            {
+                if (specifyLogScriptingDefineSymbol == specifyLog)
+                {
+                    ScriptingDefineSymbols.AddScriptingDefineSymbol(specifyLog);
+                    return;
+                }
+            }
+        }
         /// <summary>
         /// 设置日志脚本宏定义。
         /// </summary>

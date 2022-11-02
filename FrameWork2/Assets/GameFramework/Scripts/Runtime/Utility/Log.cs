@@ -81,6 +81,7 @@ namespace UnityGameFramework.Runtime
         [Conditional("ENABLE_LOG")]
         [Conditional("ENABLE_DEBUG_LOG")]
         [Conditional("ENABLE_DEBUG_AND_ABOVE_LOG")]
+        [Conditional("ENABLE_DEBUG_LOG")]
         public static void Debug(string format, object arg0, object arg1, object arg2)
         {
             GameFrameworkLog.Debug(format, arg0, arg1, arg2);
@@ -95,6 +96,7 @@ namespace UnityGameFramework.Runtime
         [Conditional("ENABLE_LOG")]
         [Conditional("ENABLE_DEBUG_LOG")]
         [Conditional("ENABLE_DEBUG_AND_ABOVE_LOG")]
+        [Conditional("ENABLE_DEBUG_LOG")]
         public static void Debug(string format, params object[] args)
         {
             GameFrameworkLog.Debug(format, args);
