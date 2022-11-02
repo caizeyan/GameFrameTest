@@ -199,7 +199,7 @@ namespace UnityGameFramework.Runtime
             m_EditorResourceMode &= Application.isEditor;
             if (m_EditorResourceMode)
             {
-    //            Log.Info("During this run, Game Framework will use editor resource files, which you should validate first.");
+                Log.Info("During this run, Game Framework will use editor resource files, which you should validate first.");
             }
 
             Application.targetFrameRate = m_FrameRate;

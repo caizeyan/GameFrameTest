@@ -11,6 +11,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+//管理游戏框架
+
 namespace UnityGameFramework.Runtime
 {
     /// <summary>

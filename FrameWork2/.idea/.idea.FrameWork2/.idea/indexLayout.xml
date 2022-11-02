@@ -9,7 +9,6 @@
       <Path>../../Library/Unity/cache/packages/packages.unity.com/com.unity.ide.vscode@1.2.5</Path>
       <Path>../../Library/Unity/cache/packages/packages.unity.com/com.unity.test-framework@1.1.31</Path>
       <Path>../../Library/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@2.1.6</Path>
-      <Path>../../Library/Unity/cache/packages/packages.unity.com/com.unity.timeline@1.2.18</Path>
     </attachedFolders>
     <explicitIncludes>
       <Path>Library/PackageCache/com.unity.collab-proxy@1.14.18</Path>

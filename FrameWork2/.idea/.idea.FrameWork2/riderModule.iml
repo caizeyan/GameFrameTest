@@ -9,7 +9,6 @@
     <content url="file://$USER_HOME$/Library/Unity/cache/packages/packages.unity.com/com.unity.ide.vscode@1.2.5" />
     <content url="file://$USER_HOME$/Library/Unity/cache/packages/packages.unity.com/com.unity.test-framework@1.1.31" />
     <content url="file://$USER_HOME$/Library/Unity/cache/packages/packages.unity.com/com.unity.textmeshpro@2.1.6" />
-    <content url="file://$USER_HOME$/Library/Unity/cache/packages/packages.unity.com/com.unity.timeline@1.2.18" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
