@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Tutorial
 {
-    public partial class GameEntry : MonoBehaviour
+    public partial class Game : MonoBehaviour
     {
         private static void InitCustomComponents()
         {

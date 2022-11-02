@@ -52,8 +52,8 @@
   <ItemGroup>
      <Compile Include="Assets\Example\ProcedureExample.cs" />
      <Compile Include="Assets\FileLogHelper.cs" />
-     <Compile Include="Assets\Scripts\GameEntry.Custom.cs" />
-     <Compile Include="Assets\Scripts\GameEntry.cs" />
+     <Compile Include="Assets\Scripts\Game.Custom.cs" />
+     <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\Scripts\GameTest.cs" />
      <Compile Include="Assets\Scripts\LogTest.cs" />
      <None Include="Assets\GameFramework\Libraries\link.xml" />

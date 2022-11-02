@@ -6,7 +6,7 @@ using UnityGameFramework.Runtime;
 
 namespace Tutorial
 {
-    public partial class GameEntry : MonoBehaviour
+    public partial class Game : MonoBehaviour
     {  /// <summary>
         /// 获取游戏基础组件。
         /// </summary>

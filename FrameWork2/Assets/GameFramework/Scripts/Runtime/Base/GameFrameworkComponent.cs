@@ -7,6 +7,8 @@
 
 using UnityEngine;
 
+//用于将框架组件注入到GameEntry
+
 namespace UnityGameFramework.Runtime
 {
     /// <summary>
